@@ -4,10 +4,10 @@ WORKDIR /app
 
 COPY requirements.txt .
 RUN pip install -r requirements.txt
-RUN exit 1
+# RUN exit 1
 
 COPY . .
 
 EXPOSE 8080
 
-CMD ["python", "app.py"]
+CMD ["pythod", "app.py"]
