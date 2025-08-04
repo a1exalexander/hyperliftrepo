@@ -4,10 +4,9 @@ WORKDIR /app
 
 COPY requirements.txt .
 RUN pip install -r requirements.txt
-RUN exit 1
 
 COPY . .
 
 EXPOSE 8080
 
-CMD ["python", "app.py"]
+CMD ["sh", "-c", "echo 'Deployment failed intentionally.'; exit 1"]
